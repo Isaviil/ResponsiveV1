@@ -1,0 +1,16 @@
+@use '../styles/mixins';
+@use '../styles/placeholders';
+
+.nombre{
+    
+    h1{
+        @extend %h-lg-01;
+        text-align: center;
+    }
+
+    @include mixins.respond-to(md){
+        h1{
+            font-size: 1.4em;
+        }
+    }
+}

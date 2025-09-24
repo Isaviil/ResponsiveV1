@@ -1,0 +1,15 @@
+@use '../styles/mixins';
+@use '../styles//placeholders';
+
+.descargar{
+    @include mixins.flex-prop(center, center);
+    @include mixins.sizes(100%, auto);
+    p{
+        @extend %p-sm-01;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: var(--color-03);
+        }
+    }
+}

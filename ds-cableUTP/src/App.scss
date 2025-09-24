@@ -1,0 +1,67 @@
+@use "./styles/_mixins.scss";
+@use "./styles/_placeholders.scss";
+
+
+.main-container{
+  @extend %main-container;
+  height: 100vh;
+  min-height: 644px;
+
+    .item-buscar{
+      @include mixins.sizes(90%, auto);
+      padding: 10px;
+    }
+
+    .item-container{
+      @include mixins.sizes(90%, auto, 1200px);
+      @include mixins.flex-prop(center, center, column, 25px);
+      padding: 20px 10px;
+
+      &-elements{
+        @include mixins.sizes(100%, auto);
+        @include mixins.flex-prop(center, center, null, 20px);
+        padding: 10px 20px;
+
+        &-text{
+          @include mixins.sizes(60%, auto);
+        }
+
+        &-img{
+          @include mixins.sizes(35%, 70%);
+
+          img{
+            @extend %fit-cover;
+            object-fit: contain;
+          }
+        }
+      }
+
+      &-price{
+        @include mixins.flex-prop(center, center);
+      }
+
+    }
+
+    @include mixins.respond-to(md){
+      height: auto;
+      min-height: unset;
+
+      .item-container{
+        padding: 25px 5px;
+        width: 95%;
+
+        &-elements{
+          padding: 0px;
+          flex-direction: column-reverse;
+
+          &-text{
+            width: 90%;        
+          }
+
+          &-img{
+            width: 100%;
+          }
+        }
+      }
+    }
+}

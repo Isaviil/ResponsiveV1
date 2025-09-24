@@ -1,0 +1,40 @@
+@use '../styles/mixins';
+@use '../styles//placeholders';
+
+.precio{
+    @include mixins.flex-prop(center, center, column, 7px);
+
+    p{
+        @extend %h-md-03;
+        span{
+            color: var(--color-03);
+            font-weight: 500;
+        }
+    }
+
+    &-cart{
+        background-color: var(--color-11);
+        padding: 5px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        @include mixins.flex-prop(center, center, null, 5px);
+
+        button{
+            background-color: transparent;
+            border: none;
+            @extend %p-sm-02;
+            font-weight: 500;
+        }
+
+        .bi-cart3{
+            @extend %h-md-03; 
+            font-weight: 300;
+        }
+    }
+
+    @include mixins.respond-to(md){
+        p{
+            text-align: center;
+        }
+    }
+}

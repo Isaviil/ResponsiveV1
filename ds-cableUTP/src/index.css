@@ -1,0 +1,63 @@
+
+/*Bebas neue*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Barlow Condensed*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: var(--color-bg);  
+  cursor: default;
+}
+
+/*dark mode*/
+:root {
+  --color-bg: #eeebeb;
+    --color-regular-text: rgb(0, 0, 0);
+    --color-black: black;
+    --color-01: #131618e7;
+    --color-02: #111821;
+    --color-03: #d63d00; 
+    --color-04: #5c1e07;
+    --color-05: rgb(228, 228, 228); 
+    --color-06: rgb(34, 34, 34);
+    --color-07: #474747;
+    --color-08: #101a257a; 
+    --color-09: rgba(203, 203, 206, 0.363);
+    --color-10: #f0481e;
+    --color-11: #f7a950;   
+    --color-12: #e5e6e7da; 
+    --color-13: #ff8f72;
+    --color-14: rgb(217 217 217 / 39%);
+    --color-15: #aa9fbd6e;
+    --color-16: #ebeaecec;
+    --color-17: #fffb11;
+
+
+    --footer-color-01: #0d0f11e7; 
+    --color-full-white: white;
+    --steel-ball: rgb(134, 29, 99);
+    --steel-ball-02: rgb(26, 75, 167); 
+}

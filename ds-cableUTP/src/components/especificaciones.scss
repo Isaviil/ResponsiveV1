@@ -1,0 +1,44 @@
+@use '../styles/mixins';
+@use '../styles//placeholders';
+
+.specs{
+     @include mixins.flex-prop(center, center, column, 5px);
+
+    h2{
+        @extend %h-md-02;
+        font-weight: 600
+    }
+
+    &-elements{
+        @include mixins.flex-prop(center, center);
+
+        &-text, &-number{
+
+
+            p{
+                @extend %p-xs-01;
+            }
+        }
+
+    }
+
+    @include mixins.respond-to(md){
+        
+        h2{
+            text-align: center;
+            font-size: 1.32em;
+        }
+
+        &-elements{
+            flex-direction: column;
+
+            &-text, &-number{
+
+                p{
+                    font-size: .8em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
